@@ -29,6 +29,7 @@ function operateCat(instance) {
       instance.sleep();
       instance.eat();
       instance.meow();
+      console.log("\n");
 }
 
 operateCat(sox);
@@ -67,8 +68,6 @@ const blackPearl = [new Pirate('Articus', "October 1901", "True"),
                     new Pirate('Salty', "April 1899", "False")
                 ];
 
-
-console.log("\n");
 
 
 function crewShip(ship) {
