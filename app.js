@@ -24,24 +24,21 @@ const sox = new Cat("Sox", "Hugo McHuman", 6);
 const garfield = new Cat("Garfield", "Jim", 10);
 
 
-function interactWithCat(instance) {
+function operateCat(instance) {
       console.log(instance);
       instance.sleep();
       instance.eat();
       instance.meow();
 }
 
+operateCat(sox);
+operateCat(garfield);
 
 
-interactWithCat(sox);
-interactWithCat(garfield);
 
-
-console.log("\n");
-// ----------------------------------------------------
+  // ----------------------------------------------------
  // ----------------------------------------------------
 // ----------------------------------------------------
-
  class Pirate {
     constructor(name, hireDate, isActive) {
       this.name = name;
@@ -71,3 +68,18 @@ const blackPearl = [new Pirate('Articus', "October 1901", "True"),
                 ];
 
 
+console.log("\n");
+
+
+function crewShip(ship) {
+    for (const pirate of ship) {
+      console.log(pirate);
+      pirate.fight();
+      pirate.reportStatus();
+      pirate.brag();
+      console.log("\n");
+    }
+  }
+
+crewShip(jollyRoger);
+crewShip(blackPearl);
